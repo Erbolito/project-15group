@@ -24,21 +24,34 @@ header img {
   top: 35px;
   left: 161px;
   margin-left: 165px;
+  cursor: pointer;
 }
-header ul {
+header nav {
+  list-style: none;
+}
+header nav ul {
   display: flex;
   list-style-type: none;
   gap: 42px;
   margin-right: 165px;
   cursor: pointer;
 }
-header ul li {
+header nav ul li {
   z-index: 2;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0px;
   text-align: center;
+  transform: 0.3s ease;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+header nav ul li:hover {
+  transform: translate(-1.5px, -1px);
 }
 
 .head {
@@ -85,16 +98,22 @@ header ul li {
   height: 58px;
   border-radius: 29px;
   border: none;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0px;
-  background-image: url(./icons/Icon.svg);
+  background-image: url(./icons/Icon\ \(2\).svg);
   background-repeat: no-repeat;
   background-position: 14px;
   margin: 165px;
   padding: 0 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.head input:hover,
+.head input:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
 }
 .head button {
   width: 157px;
@@ -111,38 +130,41 @@ header ul li {
   letter-spacing: 0px;
   cursor: pointer;
   transition: background-color 1s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.2s;
 }
 .head button:active {
   transform: translateY(2px);
   box-shadow: 0 2px 0 #666;
 }
+.head button:hover {
+  transform: scale(1.05);
+}
 
 .logopisum {
-  width: 216.8000030518;
-  height: 41.5999984741;
+  width: 1108.6287841797px;
+  height: 41.5999984741px;
   top: 888px;
   display: flex;
-  text-align: center;
-  justify-content: space-between;
   margin: 100px;
   padding: 150px;
+  flex-direction: row;
+  text-align: center;
+  gap: 300px;
 }
-.logopisum img {
-  width: 30.3999996185;
-  height: 30.3999996185;
+.logopisum .l {
+  width: 30.3999996185px;
+  height: 30.3999996185px;
   top: 895px;
-  left: 1090px;
+  display: flex;
+  justify-content: space-between;
 }
 .logopisum .color {
   background-color: #D8D8D8;
-  width: 30.3999996185;
-  height: 30.3999996185;
-  top: 895px;
-  left: 1090px;
 }
-.logopisum p {
-  width: 160.5023956299;
-  height: 31.0751991272;
+.logopisum .pp {
+  width: 160.5023956299px;
+  height: 31.0751991272px;
   top: 895.62px;
   left: 217.1px;
   color: #D8D8D8;

@@ -26,15 +26,17 @@ header{
     top: 35px;
     left: 161px;
     margin-left: 165px;
+    cursor: pointer;
 }
 
-ul{
+nav{
+    list-style: none;
+    ul{
     display: flex;
     list-style-type: none;
     gap: 42px;
     margin-right: 165px;
     cursor: pointer;
-
     li{
         z-index: 2;
         font-weight: 400;
@@ -42,9 +44,23 @@ ul{
         line-height: 100%;
         letter-spacing: 0px;
         text-align: center;
+        transform: 0.3s ease;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    li:hover{
+        transform: translate(-1.5px, -1px);
+    }
     }
 }
+
+
+    
 }
+
 
 .head{
     width: 1440px;
@@ -89,17 +105,23 @@ ul{
 height: 58px;
 border-radius: 29px;
 border: none;
-box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35);
+box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
 font-weight: 400;
 font-size: 16px;
 line-height: 100%;
 letter-spacing: 0px;
-background-image: url(./icons/Icon.svg);
+background-image: url(./icons/Icon\ \(2\).svg);
 background-repeat: no-repeat;
 background-position: 14px;
 margin: 165px ;
 padding: 0 50px ;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+    input:hover,
+input:focus {
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35); 
+}
     button{
         width: 157px;
         margin-left: -100px;
@@ -115,38 +137,41 @@ line-height: 100%;
 letter-spacing: 0px;
 cursor: pointer;
 transition: background-color 1s ease;
+transition: transform 0.3s ease;
+transition: transform 0.2s;
     }
     button:active{
         transform: translateY(2px);
         box-shadow: 0 2px 0 #666;
     }
+    button:hover{
+        transform: scale(1.05);
+    }
 }
 
 .logopisum{
-    width: 216.8000030517578;
-height: 41.599998474121094;
+    width: 1108.6287841796875px;
+height: 41.599998474121094px;
 top: 888px;
  display: flex;
-        text-align: center;
-        justify-content: space-between;
         margin: 100px ;
         padding: 150px;
-    img{
-        width: 30.399999618530273;
-height: 30.399999618530273;
+        flex-direction: row;
+        text-align: center;
+        gap: 300px;
+    .l{
+        width: 30.399999618530273px;
+height: 30.399999618530273px;
 top: 895px;
-left: 1090px;
+display: flex;
+justify-content: space-between;
     }
     .color{
         background-color: #D8D8D8;
-        width: 30.399999618530273;
-height: 30.399999618530273;
-top: 895px;
-left: 1090px;
     }
-    p{
-        width: 160.5023956298828;
-        height: 31.075199127197266;
+    .pp{
+        width: 160.5023956298828px;
+        height: 31.075199127197266px;
         top: 895.62px;
         left: 217.1px;
         color: #D8D8D8;
@@ -154,5 +179,3 @@ left: 1090px;
         font-weight: 700;
     }
 }
-
-
